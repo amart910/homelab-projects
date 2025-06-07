@@ -1,0 +1,44 @@
+# OpenWRT WireGuard VPN Setup
+
+## 📌 Overview
+This project covers how I configured a secure VPN using WireGuard on an OpenWRT router (GL.iNet AX1800/Netgear R7800) to enable encrypted remote access to my home lab.
+
+## ⚙️ Tools & Equipment
+- GL.iNet Flint (GL-AX1800) & Netgear R7800 (OpenWRT installed)
+- OpenWRT 23.x firmware
+- WireGuard (installed via Luci or CLI)
+- Android + Windows 11 WireGuard apps for client testing
+- Public DDNS (optional for remote access)
+
+## 🛠️ Setup Steps
+1. Installed and configured OpenWRT on both routers
+2. Set up **VLANs** for LAN, IoT, and guest segmentation
+3. Installed WireGuard using OpenWRT’s package manager
+4. Generated public/private keys on router and client
+5. Created WireGuard interface (`wg0`)
+   - Assigned static IP range (e.g., `10.14.0.1/24`)
+   - Configured listening port (51820/UDP)
+6. Set up firewall rules to allow LAN-to-VPN access
+   - Allowed forwarding from `wg0` to `lan`
+   - Prevented VPN-to-WAN unless explicitly needed
+7. Added port forwarding on router for WireGuard
+8. Tested connection from external client using cellular network
+9. Verified VPN traffic routing using `traceroute` and DNS leak tests
+
+## 🔐 Security Practices
+- Used strong private/public key pairs
+- Disabled password auth for router access
+- Used QR codes for mobile client setup
+- Set up logging on OpenWRT to track VPN activity
+
+## 🧠 Lessons Learned
+- Learned how to troubleshoot firewall zones in OpenWRT
+- Practiced dynamic DNS and port forwarding for remote access
+- Understood the importance of VPN peer handshakes and MTU tuning
+
+## 📸 Screenshots / Snippets
+_(Add configuration screenshots or QR code setup here later)_
+
+## 🔗 Related Projects
+- [Proxmox VE Setup](proxmox-setup.md)
+- [Wazuh SIEM on Rocky Linux](wazuh-setup.md)
