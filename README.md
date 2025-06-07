@@ -6,13 +6,13 @@ Welcome to my professional homelab portfolio. I'm a cybersecurity and IT profess
 
 ## 🔧 Featured Projects
 
-### 1. 🖥️ [Proxmox VE Setup in Homelab](proxmox-setup.md)
+### 1. 🖥️ [Proxmox VE Setup in Homelab](proxmox-setup)
 A full deployment of Proxmox VE on a mini PC to host multiple virtual machines for cybersecurity testing and simulation. Includes SSH hardening, ISO management, and network setup.
 
-### 2. 🌐 [OpenWRT VPN with WireGuard](openwrt-wireguard.md)
+### 2. 🌐 [OpenWRT VPN with WireGuard](openwrt-wireguard)
 Configured WireGuard VPN on an OpenWRT-based router to securely access internal network resources remotely. Focused on encryption, firewall zoning, and VPN endpoint testing.
 
-### 3. 📊 [Wazuh SIEM Deployment on Rocky Linux](wazuh-setup.md)
+### 3. 📊 [Wazuh SIEM Deployment on Rocky Linux](wazuh-setup)
 Manual installation of a full Wazuh security stack (Manager + ELK) on Rocky Linux, running as a Proxmox VM. Includes agent deployment, dashboard setup, and alert generation.
 
 ---
