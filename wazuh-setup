@@ -1,0 +1,62 @@
+# Wazuh SIEM Deployment on Rocky Linux 9
+
+## 📌 Overview
+This project documents the manual installation and configuration of Wazuh (a Security Information and Event Management system) on a Rocky Linux 9 VM running inside Proxmox. This setup supports log collection, real-time threat detection, and agent-based monitoring for Windows and Linux systems in my homelab.
+
+## ⚙️ Tools & Infrastructure
+- Proxmox VE (hypervisor)
+- Rocky Linux 9 ISO (Minimal DVD)
+- Wazuh 4.x (Manager, Filebeat, Elasticsearch, Kibana)
+- Windows client for agent deployment
+- CLI and Web UI for system administration
+
+## 🛠️ Step-by-Step Implementation
+
+1. **Provisioned VM**
+   - Installed Rocky Linux 9 on a Proxmox VM (4 CPU / 4GB RAM / 50GB disk)
+   - Configured static IP and hostname
+
+2. **System Preparation**
+   - Updated packages: `dnf update -y`
+   - Installed essential packages: `curl`, `wget`, `tar`, `unzip`, etc.
+   - Set SELinux to permissive
+
+3. **Wazuh Manager Installation**
+   - Installed Wazuh GPG key and repo
+   - Installed and configured Wazuh Manager
+   - Verified service status using `systemctl status wazuh-manager`
+
+4. **Filebeat + Elasticsearch + Kibana**
+   - Installed Filebeat from Wazuh repo
+   - Configured Filebeat to forward Wazuh logs
+   - Added Elasticsearch and Kibana (hosted locally)
+   - Tuned memory settings for ELK stack on low-RAM VM
+
+5. **Dashboard Access**
+   - Enabled port forwarding/firewall rules
+   - Accessed Wazuh Dashboard via browser
+   - Verified indices and agent manager connectivity
+
+6. **Windows Agent Installation**
+   - Downloaded Wazuh agent on Windows system
+   - Input manager IP and authentication key
+   - Verified heartbeat on Wazuh dashboard
+
+## 🔐 Security Configurations
+- Limited access to Wazuh dashboard to internal LAN
+- Disabled root SSH and used key-based login
+- Created dedicated admin account on Rocky Linux
+- Verified log integrity features in Wazuh
+
+## 🧠 Lessons Learned
+- Gained experience with manual SIEM deployment
+- Learned ELK stack tuning for performance
+- Understood agent registration and log analysis
+- Strengthened skills in Linux-based system hardening
+
+## 📸 Screenshots / Snippets
+_(To be added later: Wazuh dashboard, agent status, terminal output)_
+
+## 🔗 Related Projects
+- [Proxmox VE Setup](proxmox-setup.md)
+- [OpenWRT + WireGuard VPN](openwrt-wireguard.md)
