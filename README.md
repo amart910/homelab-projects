@@ -42,7 +42,7 @@ I'm actively pursuing roles in SOC operations, system/network administration, an
 You can reach out via:
 - **GitHub**: [@amart910](https://github.com/amart910)
 - **Email**: [amart91032@gmail.com](mailto:amart91032@gmail.com)
-- www.linkedin.com/in/angel-marte-55484a342
+- **LinkedIn**: www.linkedin.com/in/angel-marte-55484a342
 
 ---
 
