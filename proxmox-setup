@@ -1,0 +1,39 @@
+# Proxmox VE Setup in Homelab
+
+## 📌 Overview
+This project outlines how I set up Proxmox VE on a GMKtec Mini PC to create a virtualization platform for my cybersecurity homelab.
+
+## ⚙️ Tools & Technologies
+- Proxmox VE
+- Intel N150 Mini PC (16GB RAM, 512GB SSD)
+- ISO: Rocky Linux 9, Ubuntu, Debian
+- Web interface & shell configuration
+- Basic internal networking
+
+## 🛠️ Step-by-Step Implementation
+1. Downloaded Proxmox VE ISO and flashed using Balena Etcher
+2. Booted GMKtec Mini PC via USB
+3. Installed Proxmox and accessed Web UI via static IP
+4. Created non-root admin user, SSH hardened the host
+5. Uploaded ISOs for Rocky Linux, Debian, and Ubuntu
+6. Created VMs and assigned resources
+7. Set up static IP and local DNS mappings
+8. Planned VLAN support and security hardening
+
+## 🔐 Security Practices Implemented
+- Disabled root login via SSH
+- Added SSH key authentication
+- Planned self-signed certificates for browser access
+- Created separate Proxmox user with restricted rights
+
+## 🧠 Lessons Learned
+- Gained hands-on experience with enterprise-grade hypervisor
+- Understood VM storage types (local, LVM)
+- Practiced network and user isolation
+
+## 📸 Screenshots / Snippets
+(Coming soon)
+
+## 🔗 Related Projects
+- [OpenWRT + WireGuard VPN Setup](openwrt-wireguard.md)
+- [Wazuh SIEM on Rocky Linux](wazuh-setup.md)
