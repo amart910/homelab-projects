@@ -1,6 +1,6 @@
 # 👨‍💻 Cybersecurity & Network Engineering Homelab Projects
 
-Welcome to my professional homelab portfolio. I'm a cybersecurity and IT professional with certifications including CompTIA Security+, CySA+, PenTest+, and ISC2 SSCP. My hands-on projects reflect my ability to design, deploy, and secure systems in real-world scenarios using tools like Proxmox, OpenWRT, WireGuard, and Wazuh.
+Welcome to my professional homelab portfolio. I'm a cybersecurity and IT professional with certifications including CompTIA Security+, CySA+, PenTest+, and ISC2 SSCP. My hands-on projects demonstrate my ability to design, deploy, and secure systems in real-world scenarios using tools such as Proxmox, OpenWRT, WireGuard, Wazuh, and Azure Active Directory.
 
 ---
 
