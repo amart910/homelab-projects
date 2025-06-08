@@ -1,0 +1,39 @@
+# Azure Active Directory & Conditional Access Project
+
+## 📌 Overview
+This project involved configuring secure user access controls in Azure Active Directory (AAD) using Conditional Access Policies, security groups, and role-based access control (RBAC). Designed to simulate a secure enterprise identity and access management environment.
+
+## ⚙️ Tools & Services
+- Azure Active Directory
+- Azure Portal
+- Microsoft 365
+- RBAC
+- Conditional Access
+- Security Groups
+
+## 🛠️ Key Implementation Steps
+1. Created and deleted outdated AAD groups to simulate lifecycle management
+2. Designed new security groups aligned to functional roles (e.g., Admins, HR, Developers)
+3. Created individual user accounts and assigned appropriate group memberships
+4. Applied Conditional Access Policies to enforce:
+   - MFA for admin roles
+   - Device compliance for sensitive access
+   - Location-based restrictions
+5. Limited permissions of global admin account; created limited-scope admin accounts for RBAC testing
+6. Documented process and permission hierarchy for clarity
+
+## 🔐 Security Highlights
+- Enforced MFA and session controls
+- Demonstrated separation of duties via RBAC
+- Reduced privilege exposure for global admin account
+- Planned for Just-In-Time (JIT) access scenarios
+
+## 🧠 Lessons Learned
+- Gained hands-on experience with Azure IAM
+- Understood Conditional Access as a core Zero Trust control
+- Practiced securing cloud infrastructure with granular user controls
+
+## 🔗 Related Projects
+- [Proxmox VE Setup](proxmox-setup)
+- [OpenWRT + WireGuard VPN](wireguard-setup)
+- [Wazuh SIEM Deployment](wazuh-setup)
