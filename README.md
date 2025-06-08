@@ -15,6 +15,9 @@ Configured WireGuard VPN on an OpenWRT-based router to securely access internal 
 ### 3. 📊 [Wazuh SIEM Deployment on Rocky Linux](wazuh-setup)
 Manual installation of a full Wazuh security stack (Manager + ELK) on Rocky Linux, running as a Proxmox VM. Includes agent deployment, dashboard setup, and alert generation.
 
+### 4. ☁️ [Azure AD Security & Conditional Access](azure-ad-security)
+Designed a secure identity and access management environment in Azure Active Directory using Conditional Access, security groups, RBAC, and limited admin permissions. Simulated enterprise-grade IAM policies.
+
 ---
 
 ## 🧰 Technical Skills
