@@ -35,5 +35,5 @@ This project involved configuring secure user access controls in Azure Active Di
 
 ## 🔗 Related Projects
 - [Proxmox VE Setup](proxmox-setup)
-- [OpenWRT + WireGuard VPN](wireguard-setup)
+- [OpenWRT + WireGuard VPN](https://github.com/amart910/homelab-projects/blob/2d56e0a727a5f5e8c41d5ed2a538f90b004a4687/WireGuard%20VPN%20Setup%20on%20OpenWRT%20(GL-AX1800).md)
 - [Wazuh SIEM Deployment](wazuh-setup)
